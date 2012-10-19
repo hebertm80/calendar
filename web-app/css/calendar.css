@@ -1,0 +1,147 @@
+        html {
+            font-size: 62.5%;
+        }
+        body {
+            font: 1.2em/1.3 Arial, Helvetica, sans-serif;
+            padding: 2em 0 0 2em;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        
+        div#main {
+        	width: 700px;
+        	height:100%;
+        	padding-top:10%;
+        	margin:0px auto;
+        }
+        
+        div#login {
+        	width:40%;
+        	margin-left:auto;
+        	margin-right:auto;
+        	text-align: right;
+        	padding-top:40px;
+        	padding-right:40px;
+        	height:160px;
+        	border-radius: 15px;
+        	background-image:url('/tp1/backgroud2-tp1.jpg');
+        	background-repeat:repeat-x;
+        }
+        
+        #calendar {
+            margin: 0;
+            padding: 0;
+            width: 700px;
+            border: 2px solid #333;
+            background-color: #ddd; }
+
+        #calendar li {
+            list-style-position: inside;
+            font-weight: bold;
+            width: 88px;
+            height: 88px;
+            border: 1px solid #999;
+            float: left;
+            background-color: #fff;
+            padding: 5px;
+            overflow: hidden;
+        }
+
+        #calendar li:hover
+        {
+            overflow: visible;
+        }
+
+        #calendar li ul
+        {
+            margin: 0;
+            padding: 0;
+            clear: both;
+        }
+
+        #calendar li ul li
+        {
+            list-style: none;
+            font-weight: normal;
+            float: none;
+            border: none;
+            padding: 5px 0;
+            margin: 0;
+        }
+
+        #calendar li:hover ul li, #calendar li.hover ul li {
+            position: absolute;
+            width: 150px;
+            margin-left: -38px;
+            height: auto;
+            background-color: #8cf;
+            border: 1px solid #069;
+            padding: 10px;
+            z-index: 10;
+        }
+
+        #calendar li.filled {
+          background-color: #DDDDDD; }
+        
+        #calendar li.sunday {
+        margin-left: 0; }
+
+        #calendar li.monday {
+        margin-left: 100px; }
+
+        #calendar li.tuesday {
+        margin-left: 200px; }
+
+        #calendar li.wednesday {
+        margin-left: 300px; }
+
+        #calendar li.thursday {
+        margin-left: 400px; }
+
+        #calendar li.friday {
+        margin-left: 500px; }
+
+        #calendar li.saturday {
+        margin-left: 600px; }
+
+        .clear {
+        clear: both; }
+        
+        div.formItem .formItemInput{
+	border:1px solid #3b6e22;
+	color:#666666;
+	}
+	
+	div.formItem{
+	display:block;
+	margin-bottom:10px;
+	color:#555555;
+	background-color: #c7cfc9;
+	}
+	
+	div.formItem span.label{
+		display:block;
+		float:left;
+		padding-right:6px;
+		width:70px;
+		text-align:right;
+		font-weight:bold;
+	}
+	
+	div.bottom{
+		text-align:right;
+	}
+	
+	div.bottom :input{
+		text-align:right;
+		border:1px solid #3b6e22;
+	}
+	
+	
+	div.top{
+		 background-color: #82b58f;
+	}
+
+

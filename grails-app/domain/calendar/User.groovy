@@ -11,10 +11,12 @@ class User {
 	String login
     String password
     String name
-	
+
 
      String toString(){
      	name
-     }	  
-	 
+     }
+
+    static hasMany = [posts:Post]
 }
+
