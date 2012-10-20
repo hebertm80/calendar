@@ -11,7 +11,11 @@ import org.junit.*
 @TestFor(User)
 class UserTests {
 
-    void testSomething() {
-       fail "Implement me"
+    @Test
+    void testSaveUser() {
+      def user =  new User(login:'test',name:'test',password:'password');
+
+      user.save(failOnError:true);
     }
+
 }
