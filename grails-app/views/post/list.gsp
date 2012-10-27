@@ -24,7 +24,7 @@
 				<thead>
 					<tr>
 					
-						<g:sortableColumn property="creationDate" title="${message(code: 'post.creationDate.label', default: 'Creation Date')}" />
+						<g:sortableColumn property="createdDate" title="${message(code: 'post.createdDate.label', default: 'Creation Date')}" />
 					
 						<g:sortableColumn property="postDate" title="${message(code: 'post.postDate.label', default: 'Post Date')}" />
 					
@@ -36,7 +36,7 @@
 				<g:each in="${postInstanceList}" status="i" var="postInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${postInstance.id}">${fieldValue(bean: postInstance, field: "creationDate")}</g:link></td>
+						<td><g:link action="show" id="${postInstance.id}">${fieldValue(bean: postInstance, field: "createdDate")}</g:link></td>
 					
 						<td><g:formatDate date="${postInstance.postDate}" /></td>
 					

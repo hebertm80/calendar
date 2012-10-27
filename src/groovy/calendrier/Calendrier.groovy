@@ -10,6 +10,14 @@ class MyCalendar {
          def max = d.getActualMaximum(Calendar.DAY_OF_MONTH);
          return new GregorianCalendar(year, month , max).time
     }
+
+    def getDays()
+    {
+         def d = new GregorianCalendar(year, month , 1) ;
+         def max = d.getActualMaximum(Calendar.DAY_OF_MONTH);
+         return 1..max
+    }
+
     def getDate()
     {
     	def d = new GregorianCalendar(year, month , 1);

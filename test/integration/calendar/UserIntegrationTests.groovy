@@ -6,7 +6,7 @@ import org.junit.*
 class UserIntegrationTests {
 
     def calendarService
-    
+
     @Before
     void setUp() {
         // Setup logic here
@@ -28,14 +28,17 @@ class UserIntegrationTests {
         def u =  new User(login:'test',name:'test',password:'password').save()
         
         def c = new GregorianCalendar(2009, Calendar.JULY,5);
-        
-        u.addToPosts( new Post(postDate:c.time,title:'unpost',createdDate:new Date(),content:"test") )
+        def post = new Post(postDate:c.time,title:'unpost',createdDate:new Date(),content:"test")
+        u.addToPosts(post)
 
         def month = new MyCalendar(year:2009,month:Calendar.JULY)
         
         def posts = calendarService.posts u,month
 
-        assert posts.size() == 1
+        println posts[5] 
+        assert posts[5].size() == 1
+        assert posts[5][0].id == post.id
+        assert posts[5][0] == post
     }
 }
 

@@ -23,11 +23,11 @@
 			</g:if>
 			<ol class="property-list post">
 			
-				<g:if test="${postInstance?.creationDate}">
+				<g:if test="${postInstance?.createdDate}">
 				<li class="fieldcontain">
-					<span id="creationDate-label" class="property-label"><g:message code="post.creationDate.label" default="Creation Date" /></span>
+					<span id="createdDate-label" class="property-label"><g:message code="post.createdDate.label" default="Creation Date" /></span>
 					
-						<span class="property-value" aria-labelledby="creationDate-label"><g:formatDate date="${postInstance?.creationDate}" /></span>
+						<span class="property-value" aria-labelledby="createdDate-label"><g:formatDate date="${postInstance?.createdDate}" /></span>
 					
 				</li>
 				</g:if>

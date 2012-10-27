@@ -26,17 +26,30 @@
         }); // end click
         }); // end ready
         </script>
+        <r:require module="calendar"/>
      </head>
     <body>
 
 <ol id="calendar">
 
+    <g:each in="${calendar.days}" var="day">
+        
+        <g:if test="${day == 1}">
+            <li class="premierJourMois" onclick="nouveauPost(${day},${calendar.month},${calendar.year})">    
+        </g:if>
 
-    <g:each in="${jours}" var="jour" status="j">
+        <g:if test="${day != 1}">
+            <li onclick="nouveauPost(${day},${calendar.month},${calendar.year})">
+        </g:if>
 
+        <g:each in="${postsByDay[day]}" var="post">
+            ${post.title}
+        </g:each>
+   
+         </li>
     </g:each>
 
-
+</ol>
     </body>
 </html>
 

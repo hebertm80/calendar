@@ -14,5 +14,7 @@ class Post {
     static mapping = {
         content type: "text"
     }
+
+    static belongsTo = [user:User]
 }
 
